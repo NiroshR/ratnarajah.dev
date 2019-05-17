@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" >
-		<title>Startup 3.0.3 - Project</title>
+		<title>Nirosh Ratnarajah</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 				<link rel="icon" href="i/favicon.png" type="image/x-icon">
 				<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,600,500,700,800,900|Source+Sans+Pro:100,200,300,400,500,600,700,800,900&amp;subset=latin" rel="stylesheet">
@@ -11,40 +11,20 @@
 				<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
-			</head> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+		<script>
+			changeText = function(text, newText){
+	  			var currentText = $('#welcome').html();
+				$('#welcome').html(currentText.replace(text,newText));
+			};
+			var withBreaks1 = "Hello World!"
+			var withBreaks = "I'm Nirosh Ratnarajah"
+			window.setTimeout(function(){changeText(withBreaks1, withBreaks)}, 1000);
+		</script>
+
+	</head>
 	<body>
-<!-- Navigation Mobile type 4 -->
-
-<a class="open_menu bg-light radius_full"><i class="fas fa-bars lh-40"></i></a>
-<div class="navigation_mobile bg-dark type4">
-	<a class="close_menu color-white"><i class="fas fa-times"></i></a>
-	
-	<div class="pt-30 pb-60 inner">
-		<div class="mw-230 ml-40 f-18 color-white slogan">
-			With Startup, we don't make you start from an empty slate.
-		</div>
-		<a href="#" class="mt-20 ml-40 mb-40 btn sm transparent_white border radius6 text-uppercase sp-15 f-12 px-20">Get Started</a>
-		
-		<div class="hr h-1 bg-white op-1"></div>
-		<a href="#" class="ml-40 f-heading f-22 lh-70 link color-white"><i class="fas fa-asterisk f-18 lh-70 mr-20"></i>Tour</a>
-		<div class="hr h-1 bg-white op-1"></div>
-		<a href="#" class="ml-40 f-heading f-22 lh-70 link color-white"><i class="fas fa-briefcase f-18 lh-70 mr-20"></i>Showcase</a>
-		<div class="hr h-1 bg-white op-1"></div>
-		<a href="#" class="ml-40 f-heading f-22 lh-70 link color-white"><i class="fas fa-paint-brush f-18 lh-70 mr-20"></i>Designers</a>
-		<div class="hr h-1 bg-white op-1"></div>
-		<a href="#" class="ml-40 f-heading f-22 lh-70 link color-white"><i class="fas fa-coffee f-18 lh-70 mr-20"></i>Teams</a>
-		<div class="hr h-1 bg-white op-1"></div>
-		<a href="#" class="ml-40 f-heading f-22 lh-70 link color-white"><i class="fas fa-star f-18 lh-70 mr-20"></i>About</a>
-		<div class="hr h-1 bg-white op-1"></div>
-		<a href="#" class="ml-40 f-heading f-22 lh-70 link color-white"><i class="fas fa-question-circle f-18 lh-70 mr-20"></i>Help</a>
-		<div class="hr h-1 bg-white op-1"></div>
-
-		<div class="ml-40 mt-110 links">
-			<div><a href="#" class="f-12 semibold color-white link op-3 text-uppercase sp-15 mb-20">Privacy Policy</a></div>
-			<div><a href="#" class="f-12 semibold color-white link op-3 text-uppercase sp-15 mb-20">Terms & conditions</a></div>
-		</div>
-	</div>
-</div>
 
 <!-- Header 4 -->
 
@@ -52,7 +32,7 @@
 
 	<!-- Header Menu 4 -->
 
-	<nav class="header_menu_4 pt-45 pb-45">
+	<!-- <nav class="header_menu_4 pt-45 pb-45">
 		<div class="container px-xl-0">
 			<div class="row align-items-baseline">
 				<div class="col-xl-10 f-18 medium d-flex align-items-baseline" data-aos-duration="400" data-aos="zoom-in" data-aos-delay="400">
@@ -70,13 +50,13 @@
 				</div>
 			</div>
 		</div>
-	</nav>
+	</nav> -->
 
 	<div class="container px-xl-0">
-		<div class="mb-3 logo d-block d-xl-none text-center logo_mobile">Startup 3</div>
+		<!-- <div class="mb-3 logo d-block d-xl-none text-center logo_mobile">Startup 3</div> -->
 		<div class="row justify-content-center">
 			<div class="col-lg-8" data-aos-duration="400" data-aos="zoom-in" data-aos-delay="0">
-				<h1 class="text-center">Simple and beautiful <br />ready for use blocks</h1>
+				<h1 class="text-center" id="welcome">Hi there!<br>I'm Nirosh Ratnarajah.</h1>
 			</div>
 			<div class="col-lg-8">
 				<div class="mt-85 video" data-ratio="16/9">
@@ -104,14 +84,14 @@
 				<i class="mx-30 far fa-star" data-aos-duration="400" data-aos="zoom-in" data-aos-delay="200"></i>
 			</div>
 			<div class="col-xl-7 col-lg-8 col-md-10" data-aos-duration="400" data-aos="zoom-in" data-aos-delay="400">
-				<h2 class="mt-45 small">Better Landing for Your Startup</h2>
+				<h2 class="mt-45 small">I'm a Waterloo Computer Engineering Student</h2>
 			</div>
 			<div class="mt-30 col-xl-7 col-lg-8 col-md-9 col-sm-10 f-22 color-heading op-7 text-adaptive">
-				<span data-aos-duration="400" data-aos="zoom-in" data-aos-delay="600">				
-				We have created a new product that will help designers, 
-				developers and companies create websites for their <br />
-				startups quickly and easily.
-				</span>				
+				<span data-aos-duration="400" data-aos="zoom-in" data-aos-delay="600">
+				I have a passion for how the technology that <br/>
+				surrounds makes day-to-day life easier.<br/>
+				Hence my interest in both hardware and software.
+				</span>
 			</div>
 		</div>
 	</div>
@@ -126,12 +106,31 @@
 				<div class="radius10 pt-60 pb-55 text-center inner">
 					<div class="row justify-content-center">
 						<div class="col-xl-9 col-lg-10 col-11">
-							<h2 class="mb-15 small" data-aos-duration="400" data-aos="zoom-in" data-aos-delay="0">Beautiful Framework</h2>
+							<h2 class="mb-15 small" data-aos-duration="400" data-aos="zoom-in" data-aos-delay="0">Experience</h2>
 							<div class="f-18 medium color-heading text-adaptive" data-aos-duration="400" data-aos="zoom-in" data-aos-delay="200">
-								Startup Framework contains components and complex blocks which can 
-								easily be integrated into almost any design. All of the components are <br />
-								made in the same style, and can easily be integrated into projects, <br />
-								allowing you to create hundreds of solutions.
+								<p><strong>BlackBerry Messenger</strong><br>
+								<strong>Test Automation Developer | Winter 2019</strong></p>
+								<p>
+								Restructured automated UI testing procedures resulting in 66% reduced testing time<br>
+								Applied both Appium and Swift UI tests to ensure the quality of voice calls in the app<br>
+								Automated 80% of all voice and video call tests on the Android platform<br>
+								Developed new test structure preventing individual test failures from impacting the entire suite<br>
+								<p>
+
+								<p><strong>Electronics Team Member</strong><br>
+								<strong>University of Waterloo Formula Motorsports</strong></p>
+								<p>
+								Evaluated the viability of e-throttle for 2020 car by conducting a sensitivity study<br>
+								Developed firmware code to analyze the performance characteristics of using e-throttle<br>
+								Assembled and soldered electrical components for the 2019 race car<br>
+								</p>
+								<p><strong>Project Manager | Fall 2017</strong><br>
+								<strong>The Inside Ride Charity Event &ndash; Mentor College</strong></p>
+								<p>
+								Managed all financial and logistical challenges related to organizing a charitable event<br>
+								Led efforts to raise over $30,000 towards supporting children with childhood cancer<br>
+								Organized and maintained weekly project and financial status reports for the initiative<br>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -153,18 +152,18 @@
 						<i class="fas fa-briefcase f-60 action-3"></i>
 						<div class="mt-20 mb-25 f-22 title">Many Useful <br />Components</div>
 						<div class="color-heading text-adaptive">
-							Startup Framework contains 
-							components and complex blocks 
+							Startup Framework contains
+							components and complex blocks
 							which can easily be integrated <br />
-							into almost any design. 
+							into almost any design.
 						</div>
 					</div>
 					<div class="col-md-4 mb-50" data-aos-duration="400" data-aos="zoom-in" data-aos-delay="400">
 						<i class="fas fa-compress-arrows-alt f-60 action-3"></i>
 						<div class="mt-20 mb-25 f-22 title">Responsive <br />Layout</div>
 						<div class="color-heading text-adaptive">
-							We haven’t forgotten about 
-							responsive layout. With Startup 
+							We haven’t forgotten about
+							responsive layout. With Startup
 							Framework, you can create a <br />
 							website with full mobile support.
 						</div>
@@ -195,13 +194,13 @@
 			</div>
 			<div class="col-xl-7 col-lg-9 col-md-10">
 				<div class="mt-20 mb-60 f-22 color-heading text-adaptive description" data-aos-duration="400" data-aos="zoom-in" data-aos-delay="200">
-					Startup Framework contains components and complex 
+					Startup Framework contains components and complex
 					blocks which can easily be integrated into any design.
 				</div>
-				<div data-aos-duration="400" data-aos="zoom-in" data-aos-delay="400">				
+				<div data-aos-duration="400" data-aos="zoom-in" data-aos-delay="400">
 				<a href="#" class="mb-30 btn lg action-1">Purchase for $249</a>
 				<div class="color-heading text-adaptive">Commercial License</div>
-				</div>				
+				</div>
 			</div>
 		</div>
 	</div>
