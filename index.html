@@ -28,8 +28,11 @@
 	  			var currentText = $('#welcome').html();
 				$('#welcome').html(currentText.replace(text,newText));
 			};
-			var withBreaks1 = "Hello World!"
-			var withBreaks = "I'm Nirosh Ratnarajah"
+			var withBreaks1 = "I'm Nirosh Ratnarajah."
+			var withBreaks = "printf(\"I'm Nirosh Ratnarajah.\")"
+			var wi = "Hi there!"
+			var empty = ""
+			window.setTimeout(function(){changeText(wi, empty)}, 1000);
 			window.setTimeout(function(){changeText(withBreaks1, withBreaks)}, 1000);
 		</script>
 
