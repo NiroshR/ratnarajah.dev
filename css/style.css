@@ -1,0 +1,65 @@
+/* Remove all browser defaulted formatting on all attributes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply background colour to body */
+body {
+    background-color: black;
+    font-family: sans-serif;
+
+    /* Transition our background colour change */
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+/* Header formatting for name */
+header {
+    height: 100vh;              /* 100% vertical height */
+    display: flex;              
+    justify-content: center;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-text h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-size: 22px;
+}
+
+/* Page styling  */
+section {
+    height: 100vh;
+    display: flex;              /* Image and text side by side */
+    flex-direction: column;     /* Put the image and text in one column */
+    align-items: center;
+    justify-content: space-around;
+}
+
+section img {
+    width: 50%;
+    height: 70%;
+    object-fit: cover;          /* Keep the aspect ratio of the image */
+}
+
+.page2 {
+    text-align: center;
+    width: 70%;
+}
+
+.page2 h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.background-active {
+    background-color: white;
+}
