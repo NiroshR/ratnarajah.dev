@@ -8,7 +8,7 @@
 /* Apply background colour to body */
 body {
     background-color: black;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
     /* Transition our background colour change */
     -webkit-transition: background-color 1000ms linear;
@@ -60,6 +60,23 @@ section img {
     font-size: 30px;
 }
 
+.page2 p {
+    font-size: 25px;
+}
+
 .background-active {
     background-color: white;
 }
+
+/* Page styling for majority content */
+.continuous {
+     margin-top: 100px;
+    height: 100%;
+    display: flex;              /* Image and text side by side */
+    flex-direction: column;     /* Put the image and text in one column */
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
