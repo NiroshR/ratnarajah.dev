@@ -46,7 +46,7 @@ section {
 
 section img {
     width: 50%;
-    height: 70%;
+    height: 50%;
     object-fit: cover;          /* Keep the aspect ratio of the image */
 }
 
@@ -57,7 +57,9 @@ section img {
 
 .page2 h1 {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 .page2 p {
@@ -70,12 +72,14 @@ section img {
 
 /* Page styling for majority content */
 .continuous {
-     margin-top: 100px;
     height: 100%;
     display: flex;              /* Image and text side by side */
     flex-direction: column;     /* Put the image and text in one column */
     align-items: center;
     justify-content: space-around;
+    background-color: #f7f8fa;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 
