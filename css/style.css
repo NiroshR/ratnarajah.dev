@@ -27,17 +27,18 @@ header {
 }
 
 .intro-text h1 {
-    font-size: 50px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
 .intro-text p {
-    font-size: 22px;
+    font-size: 15px;
 }
 
 /* Page styling  */
 section {
-    height: 100vh;
+    height: auto;
+    padding: 20px 0px;
     display: flex;              /* Image and text side by side */
     flex-direction: column;     /* Put the image and text in one column */
     align-items: center;
@@ -45,9 +46,10 @@ section {
 }
 
 section img {
-    width: 50%;
-    height: 50%;
+    width: 75%;
+    height: 25%;
     object-fit: cover;          /* Keep the aspect ratio of the image */
+    margin-bottom: 10px;
 }
 
 .page2 {
@@ -57,13 +59,13 @@ section img {
 
 .page2 h1 {
     margin-bottom: 20px;
-    font-size: 35px;
+    font-size: 22px;
     font-weight: bolder;
     text-transform: uppercase;
 }
 
 .page2 p {
-    font-size: 25px;
+    font-size: 17px;
     padding-bottom: 10px;
 }
 
@@ -115,4 +117,90 @@ i {
     width: 100%;
     padding-left: 2%;
     padding-right: 2%;
-  }
+}
+
+/* only to run when the min width is 768px */
+@media only screen and (min-width: 768px) {
+
+    .intro-text h1 {
+        font-size: 40px;
+    }
+    
+    .intro-text p {
+        font-size: 22px;
+    }
+
+    section {
+        height: 100vh;
+        padding: 0px 0px;
+    }
+
+    .page2 h1 {
+        font-size: 35px;
+    }
+
+    .page2 p {
+        font-size: 20px;
+    }
+	
+    section img {
+        width: 50%;
+        height: 50%;
+        padding: 0px 0px;
+    }
+
+}
+
+/* only to run when the min width is 1080px */
+/* inherits from the 768px media format */
+@media only screen and (min-width: 1080px) {
+
+    .intro-text h1 {
+        font-size: 60px;
+    }
+    
+    .intro-text p {
+        font-size: 30px;
+    }
+
+    section img {
+        padding: 0px 0px;
+    }
+
+    .page2 h1 {
+        padding-top: 20px;
+        font-size: 40px;
+    }
+
+    .page2 p {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (min-height: 980px) {
+
+    #coop {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    section {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    section img {
+        padding-bottom: 40px;
+    }
+
+    .page2 h1 {
+        padding-bottom: 20px;
+    }
+
+    .page2 p {
+        margin-bottom: 10px;
+    }
+
+}
+
