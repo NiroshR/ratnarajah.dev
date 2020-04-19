@@ -141,12 +141,13 @@ i {
 
     .page2 p {
         font-size: 20px;
+        margin-top: 10px;
     }
 	
     section img {
-        width: 50%;
+        width: 80%;
         height: 50%;
-        padding: 0px 0px;
+        margin-bottom: 20px;
     }
 
 }
@@ -164,6 +165,8 @@ i {
     }
 
     section img {
+        width: 75%;
+        height: 60%;
         padding: 0px 0px;
     }
 
@@ -178,7 +181,23 @@ i {
 
 }
 
-@media only screen and (min-height: 980px) {
+@media only screen and (min-width: 1200px) {
+
+    section img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media only screen and (min-height: 980px) and (min-width: 768px) {
+
+    .intro-text h1 {
+        font-size: 70px;
+    }
+    
+    .intro-text p {
+        font-size: 30px;
+    }
 
     #coop {
         margin-top: 10px;
@@ -192,6 +211,12 @@ i {
 
     section img {
         padding-bottom: 40px;
+        width: 75%;
+        height: 50%;
+    }
+
+    #pano {
+        width: 80%;
     }
 
     .page2 h1 {
@@ -203,4 +228,23 @@ i {
     }
 
 }
+
+@media only screen and (min-height: 980px) and (min-width: 1080px) {
+
+    .intro-text h1 {
+        font-size: 80px;
+    }
+    
+    .intro-text p {
+        font-size: 40px;
+    }
+
+    section img {
+        width: 42%;
+        height: 25%;
+    }
+
+}
+
+
 
