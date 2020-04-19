@@ -10,6 +10,8 @@ function backgroundChanger() {
     }
 }
 
+// https://www.youtube.com/watch?v=C_JKlr4WKKs
+
 function scrollAppear() {
     var content1 = document.querySelector('.timeline1');
     var content1Position = content1.getBoundingClientRect().top;
