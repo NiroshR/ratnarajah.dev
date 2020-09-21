@@ -13,6 +13,16 @@ function backgroundChanger() {
 // https://www.youtube.com/watch?v=C_JKlr4WKKs
 
 function scrollAppear() {
+    var content0 = document.querySelector('.timeline0');
+    var content0Position = content0.getBoundingClientRect().top;
+    var screen0Position = window.innerHeight / 1.2;
+
+    if (content0Position < screen0Position) {
+        content0.classList.add('timeline-content-appear');
+    } else if (content0Position > screen0Position * 1.0) {
+        content0.classList.remove('timeline-content-appear');
+    }
+
     var content1 = document.querySelector('.timeline1');
     var content1Position = content1.getBoundingClientRect().top;
     var screen1Position = window.innerHeight / 1.2;
