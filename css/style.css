@@ -1,250 +1,74 @@
-/* Remove all browser defaulted formatting on all attributes */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-/* Apply background colour to body */
 body {
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
-
-    /* Transition our background colour change */
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
+    background: black;
+    font-family: sans-serif;
 }
 
-/* Header formatting for name */
-header {
-    height: 100vh;              /* 100% vertical height */
-    display: flex;              
-    justify-content: center;
+.tabs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 350px;
+    background: white;
+    color: black;
+    overflow: hidden;
+    box-shadow:  2px 2px 5px 2px;
+    display: flex;
+}
+
+.tabs .tab-header {
+    width: 150px;
+}
+
+.tabs .tab-header > div {
+    width: 100%;
+    /* Change divisor when adding new tab. */
+    height: calc(100% / 4);
+    background: black;
+    text-indent: 20px;
     color: white;
-    align-items: center;
-    text-align: center;
-}
-
-.intro-text h1 {
-    font-size: 35px;
-    margin-bottom: 10px;
-}
-
-.intro-text p {
-    font-size: 15px;
-}
-
-/* Page styling  */
-section {
-    height: auto;
-    padding: 20px 0px;
-    display: flex;              /* Image and text side by side */
-    flex-direction: column;     /* Put the image and text in one column */
-    align-items: center;
-    justify-content: space-around;
-}
-
-section img {
-    width: 75%;
-    height: 25%;
-    object-fit: cover;          /* Keep the aspect ratio of the image */
-    margin-bottom: 10px;
-}
-
-.page2 {
-    text-align: center;
-    width: 70%;
-}
-
-.page2 h1 {
-    margin-bottom: 20px;
-    font-size: 22px;
-    font-weight: bolder;
+    font-weight: 600;
+    font-size: 14px;
     text-transform: uppercase;
-}
-
-.page2 p {
-    font-size: 17px;
-    padding-bottom: 10px;
-}
-
-.background-active {
-    background-color: white;
-}
-
-/* Page styling for majority content */
-.continuous {
-    height: 100%;
-    display: flex;              /* Image and text side by side */
-    flex-direction: column;     /* Put the image and text in one column */
-    align-items: center;
-    justify-content: space-around;
-    background-color: #f7f8fa;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-#pano {
-    width: 100%;
-}
-
-footer {
     display: flex;
-    background-color: #f5f5f7;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-footer p {
-    padding: 10px 5px 10px 0px;
-    color: #1d1d1f;
     align-items: center;
+    border-left: 5px solid white;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
 }
 
-i {
-    color: #1d1d1f;
-    font-size: 30px;
-    padding: 5px 5px 5px 5px;
-}
-
-.icon-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-/* only to run when the min width is 768px */
-@media only screen and (min-width: 768px) {
-
-    .intro-text h1 {
-        font-size: 40px;
-    }
-    
-    .intro-text p {
-        font-size: 22px;
-    }
-
-    section {
-        height: 100vh;
-        padding: 0px 0px;
-    }
-
-    .page2 h1 {
-        font-size: 35px;
-    }
-
-    .page2 p {
-        font-size: 20px;
-        margin-top: 10px;
-    }
-	
-    section img {
-        width: 80%;
-        height: 50%;
-        margin-bottom: 20px;
-    }
-
-}
-
-/* only to run when the min width is 1080px */
-/* inherits from the 768px media format */
-@media only screen and (min-width: 1080px) {
-
-    .intro-text h1 {
-        font-size: 60px;
-    }
-    
-    .intro-text p {
-        font-size: 30px;
-    }
-
-    section img {
-        width: 75%;
-        height: 60%;
-        padding: 0px 0px;
-    }
-
-    .page2 h1 {
-        padding-top: 20px;
-        font-size: 40px;
-    }
-
-    .page2 p {
-        font-size: 30px;
-    }
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-    section img {
-        width: 50%;
-        height: 50%;
-    }
-}
-
-@media only screen and (min-height: 980px) and (min-width: 768px) {
-
-    .intro-text h1 {
-        font-size: 70px;
-    }
-    
-    .intro-text p {
-        font-size: 30px;
-    }
-
-    #coop {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    section {
-        height: auto;
-        padding-bottom: 50px;
-    }
-
-    section img {
-        padding-bottom: 40px;
-        width: 75%;
-        height: 50%;
-    }
-
-    #pano {
-        width: 80%;
-    }
-
-    .page2 h1 {
-        padding-bottom: 20px;
-    }
-
-    .page2 p {
-        margin-bottom: 10px;
-    }
-
-}
-
-@media only screen and (min-height: 980px) and (min-width: 1080px) {
-
-    .intro-text h1 {
-        font-size: 80px;
-    }
-    
-    .intro-text p {
-        font-size: 40px;
-    }
-
-    section img {
-        width: 42%;
-        height: 25%;
-    }
-
+.tabs .tab-header > div.active {
+    border-left: 5px solid #00acee;
+    color: #00acee;
+    background: black;
 }
 
 
+.tabs .tab-content {
+    padding: 20px 30px;
+    flex: 1;
+    position: relative;
+    color: white;
+    background-color: black;
+}
+
+.tabs .tab-content > div {
+    position: absolute;
+    top: -50vh;
+    left: 100px;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out 0ms;
+}
+
+.tabs .tab-content > div.active {
+    top: 20px;
+    left: 20px;
+    opacity: 1;
+    transition: opacity 300ms ease-in-out 0ms;
+}
 
