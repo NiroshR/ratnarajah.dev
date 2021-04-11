@@ -1,0 +1,28 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width:400px;
+    max-height:400px;
+  }
+
+  h3 { 
+      color: #4DB6E4
+  }
+
+  .container {
+    position: relative;
+    padding: 30px;
+  }
+  
+  .child {
+    /* width: 500px; */
+    height: 50px;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+  }
