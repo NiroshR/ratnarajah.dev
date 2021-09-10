@@ -1,5 +1,6 @@
 .extracurriculars {
     position: relative;
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 70px;
@@ -59,6 +60,20 @@
     }
 
     .extracurriculars-title {
-        font-size: 32px;
+        font-size: 20px;
     }
   }
+
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    .extracurriculars-title {
+        font-size: 30px;
+    }
+
+
+    .extracurriculars-img {
+        float: left;
+        width: 45%;
+        padding: 10px 30px;
+    }
+  }
+
