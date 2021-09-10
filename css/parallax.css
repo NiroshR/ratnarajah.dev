@@ -60,6 +60,8 @@
     }
 
     .extracurriculars-title {
+        padding-left: 0px;
+        padding-right: 0px;
         text-align: center;
         font-size: 20px;
     }
