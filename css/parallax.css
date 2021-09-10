@@ -39,6 +39,10 @@
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
+    .extracurriculars {
+        max-width: 500px;
+    }
+    
     .extracurriculars-img {
         float: inline-end;
         width: 100%;
